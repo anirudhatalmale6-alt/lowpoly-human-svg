@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Low-Poly Female Front — Wireframe Topology</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Outfit:wght@200;300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Outfit:wght@200;300&display=swap');
   *{margin:0;padding:0;box-sizing:border-box}
   body{
     background:#fff;
@@ -15,518 +15,516 @@
     align-items:center;
     justify-content:center;
     font-family:'Outfit',sans-serif;
-    color:#333;
+    color:#444;
   }
   .page-wrapper{
     display:flex;
     flex-direction:column;
     align-items:center;
-    padding:40px 20px 60px;
+    padding:30px 20px 50px;
+    max-width:600px;
   }
   .title-block{
     text-align:center;
-    margin-bottom:20px;
+    margin-bottom:16px;
   }
   .title-block h1{
     font-family:'Cormorant Garamond',serif;
     font-weight:300;
-    font-size:clamp(1.2rem,2.5vw,1.8rem);
-    letter-spacing:0.15em;
+    font-size:1.5rem;
+    letter-spacing:0.12em;
     text-transform:uppercase;
-    color:#555;
+    color:#666;
   }
-  .title-block .subtitle{
+  .title-block .sub{
     font-weight:200;
-    font-size:0.65rem;
+    font-size:0.6rem;
     letter-spacing:0.25em;
     text-transform:uppercase;
     color:#bbb;
-    margin-top:4px;
+    margin-top:3px;
   }
   .svg-container{
-    width:clamp(340px,55vw,520px);
-  }
-  .svg-container svg{
     width:100%;
-    height:auto;
-    display:block;
+    max-width:520px;
   }
+  .svg-container svg{width:100%;height:auto;display:block}
   .facet{
     fill:none;
-    stroke:#4a4a4a;
-    stroke-width:0.9;
+    stroke:#4d4d4d;
+    stroke-width:0.7;
     stroke-linejoin:round;
-    transition:fill 0.2s ease, stroke 0.2s ease;
+    transition:fill 0.15s ease, stroke 0.15s ease;
     cursor:pointer;
   }
   .facet:hover{
-    fill:rgba(100,100,100,0.05);
+    fill:rgba(80,80,80,0.04);
     stroke:#333;
-    stroke-width:1.1;
+    stroke-width:0.9;
   }
   .facet.active{
-    fill:rgba(80,80,80,0.08);
+    fill:rgba(60,60,60,0.07);
     stroke:#222;
-    stroke-width:1.3;
+    stroke-width:1.1;
   }
-  .tooltip{
-    position:fixed;
-    pointer-events:none;
-    background:rgba(255,255,255,0.96);
-    border:1px solid #ddd;
-    color:#666;
-    font-weight:300;
-    font-size:0.6rem;
-    letter-spacing:0.1em;
+  .tip{
+    position:fixed;pointer-events:none;
+    background:rgba(255,255,255,0.97);
+    border:1px solid #e0e0e0;
+    color:#777;font-weight:300;
+    font-size:0.55rem;letter-spacing:0.1em;
     text-transform:uppercase;
-    padding:4px 10px;
-    border-radius:2px;
-    opacity:0;
-    transition:opacity 0.15s ease;
-    z-index:100;
+    padding:3px 10px;border-radius:1px;
+    opacity:0;transition:opacity 0.12s;z-index:99;
     white-space:nowrap;
   }
-  .tooltip.visible{opacity:1}
-  .footer-label{
-    color:#ccc;
-    font-size:0.5rem;
-    letter-spacing:0.2em;
-    text-transform:uppercase;
-    margin-top:14px;
-    font-weight:200;
-  }
+  .tip.on{opacity:1}
+  .foot{color:#ccc;font-size:0.45rem;letter-spacing:0.2em;text-transform:uppercase;margin-top:12px;font-weight:200}
 </style>
 </head>
 <body>
 <div class="page-wrapper">
   <div class="title-block">
-    <h1>Low-Poly Female &mdash; Front View</h1>
-    <div class="subtitle">Wireframe Topology &bull; Beauty-Tech Series</div>
+    <h1>Female Front &mdash; Wireframe Topology</h1>
+    <div class="sub">Premium Low-Poly &bull; Beauty-Tech Series</div>
   </div>
   <div class="svg-container">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 710" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" fill="none">
   <style>
-    .facet { fill: none; stroke: #4a4a4a; stroke-width: 0.9; stroke-linejoin: round; }
+    .facet { fill: none; stroke: #4d4d4d; stroke-width: 0.7; stroke-linejoin: round; }
   </style>
-  <line x1="350" y1="20" x2="350" y2="386" stroke="#ccc" stroke-width="0.3" stroke-dasharray="3,5"/>
+  <line x1="400" y1="22" x2="400" y2="418" stroke="#d0d0d0" stroke-width="0.25" stroke-dasharray="4,6"/>
   <g id="head">
-    <polygon class="facet" data-region="Head" points="350,20 330,28 350,36"/>
-    <polygon class="facet" data-region="Head" points="350,20 370,28 350,36"/>
-    <polygon class="facet" data-region="Head" points="330,28 312,40 350,36"/>
-    <polygon class="facet" data-region="Head" points="370,28 388,40 350,36"/>
-    <polygon class="facet" data-region="Head" points="312,40 305,56 350,50"/>
-    <polygon class="facet" data-region="Head" points="312,40 350,36 350,50"/>
-    <polygon class="facet" data-region="Head" points="350,36 388,40 350,50"/>
-    <polygon class="facet" data-region="Head" points="388,40 395,56 350,50"/>
-    <polygon class="facet" data-region="Head" points="305,56 302,72 306,82"/>
-    <polygon class="facet" data-region="Head" points="305,56 350,50 322,80"/>
-    <polygon class="facet" data-region="Head" points="305,56 306,82 322,80"/>
-    <polygon class="facet" data-region="Head" points="350,50 395,56 378,80"/>
-    <polygon class="facet" data-region="Head" points="350,50 322,80 350,78"/>
-    <polygon class="facet" data-region="Head" points="350,50 350,78 378,80"/>
-    <polygon class="facet" data-region="Head" points="395,56 398,72 394,82"/>
-    <polygon class="facet" data-region="Head" points="395,56 378,80 394,82"/>
-    <polygon class="facet" data-region="Head" points="306,82 304,90 318,88"/>
-    <polygon class="facet" data-region="Head" points="306,82 322,80 318,88"/>
-    <polygon class="facet" data-region="Head" points="322,80 318,88 330,90"/>
-    <polygon class="facet" data-region="Head" points="322,80 350,78 330,90"/>
-    <polygon class="facet" data-region="Head" points="350,78 350,88 330,90"/>
-    <polygon class="facet" data-region="Head" points="350,78 350,88 370,90"/>
-    <polygon class="facet" data-region="Head" points="350,78 378,80 370,90"/>
-    <polygon class="facet" data-region="Head" points="378,80 370,90 382,88"/>
-    <polygon class="facet" data-region="Head" points="378,80 394,82 382,88"/>
-    <polygon class="facet" data-region="Head" points="394,82 382,88 396,90"/>
-    <polygon class="facet" data-region="Head" points="304,90 318,88 316,96"/>
-    <polygon class="facet" data-region="Head" points="318,88 330,90 316,96"/>
-    <polygon class="facet" data-region="Head" points="382,88 396,90 384,96"/>
-    <polygon class="facet" data-region="Head" points="370,90 382,88 384,96"/>
-    <polygon class="facet" data-region="Head" points="304,90 316,96 300,104"/>
-    <polygon class="facet" data-region="Head" points="302,72 304,90 300,104"/>
-    <polygon class="facet" data-region="Head" points="396,90 384,96 400,104"/>
-    <polygon class="facet" data-region="Head" points="398,72 396,90 400,104"/>
-    <polygon class="facet" data-region="Head" points="330,90 350,88 350,98"/>
-    <polygon class="facet" data-region="Head" points="350,88 370,90 350,98"/>
-    <polygon class="facet" data-region="Head" points="316,96 330,90 350,98"/>
-    <polygon class="facet" data-region="Head" points="384,96 370,90 350,98"/>
-    <polygon class="facet" data-region="Head" points="350,98 342,110 350,112"/>
-    <polygon class="facet" data-region="Head" points="350,98 358,110 350,112"/>
-    <polygon class="facet" data-region="Head" points="316,96 350,98 342,110"/>
-    <polygon class="facet" data-region="Head" points="384,96 350,98 358,110"/>
-    <polygon class="facet" data-region="Head" points="300,104 316,96 302,118"/>
-    <polygon class="facet" data-region="Head" points="400,104 384,96 398,118"/>
-    <polygon class="facet" data-region="Head" points="342,110 334,122 350,120"/>
-    <polygon class="facet" data-region="Head" points="342,110 350,112 350,120"/>
-    <polygon class="facet" data-region="Head" points="350,112 358,110 350,120"/>
-    <polygon class="facet" data-region="Head" points="358,110 366,122 350,120"/>
-    <polygon class="facet" data-region="Head" points="334,122 350,120 350,128"/>
-    <polygon class="facet" data-region="Head" points="350,120 366,122 350,128"/>
-    <polygon class="facet" data-region="Head" points="316,96 342,110 302,118"/>
-    <polygon class="facet" data-region="Head" points="384,96 358,110 398,118"/>
-    <polygon class="facet" data-region="Head" points="302,118 342,110 334,122"/>
-    <polygon class="facet" data-region="Head" points="398,118 358,110 366,122"/>
-    <polygon class="facet" data-region="Head" points="302,118 334,122 308,132"/>
-    <polygon class="facet" data-region="Head" points="398,118 366,122 392,132"/>
-    <polygon class="facet" data-region="Head" points="300,104 302,118 308,132"/>
-    <polygon class="facet" data-region="Head" points="400,104 398,118 392,132"/>
-    <polygon class="facet" data-region="Head" points="308,132 334,122 318,142"/>
-    <polygon class="facet" data-region="Head" points="392,132 366,122 382,142"/>
-    <polygon class="facet" data-region="Head" points="334,122 350,128 318,142"/>
-    <polygon class="facet" data-region="Head" points="366,122 350,128 382,142"/>
-    <polygon class="facet" data-region="Head" points="318,142 350,128 332,148"/>
-    <polygon class="facet" data-region="Head" points="382,142 350,128 368,148"/>
-    <polygon class="facet" data-region="Head" points="350,128 332,148 350,152"/>
-    <polygon class="facet" data-region="Head" points="350,128 368,148 350,152"/>
+    <polygon class="facet" data-region="Head" points="400,22 382,28 400,34"/>
+    <polygon class="facet" data-region="Head" points="400,22 418,28 400,34"/>
+    <polygon class="facet" data-region="Head" points="382,28 370,38 364,52"/>
+    <polygon class="facet" data-region="Head" points="382,28 400,34 384,48"/>
+    <polygon class="facet" data-region="Head" points="382,28 364,52 384,48"/>
+    <polygon class="facet" data-region="Head" points="400,34 384,48 400,46"/>
+    <polygon class="facet" data-region="Head" points="400,34 418,28 416,48"/>
+    <polygon class="facet" data-region="Head" points="400,34 400,46 416,48"/>
+    <polygon class="facet" data-region="Head" points="418,28 430,38 436,52"/>
+    <polygon class="facet" data-region="Head" points="418,28 416,48 436,52"/>
+    <polygon class="facet" data-region="Head" points="364,52 370,38 358,66"/>
+    <polygon class="facet" data-region="Head" points="364,52 358,66 374,64"/>
+    <polygon class="facet" data-region="Head" points="364,52 384,48 374,64"/>
+    <polygon class="facet" data-region="Head" points="384,48 374,64 388,66"/>
+    <polygon class="facet" data-region="Head" points="384,48 400,46 388,66"/>
+    <polygon class="facet" data-region="Head" points="400,46 388,66 400,64"/>
+    <polygon class="facet" data-region="Head" points="400,46 416,48 400,64"/>
+    <polygon class="facet" data-region="Head" points="416,48 400,64 412,66"/>
+    <polygon class="facet" data-region="Head" points="416,48 436,52 412,66"/>
+    <polygon class="facet" data-region="Head" points="436,52 412,66 426,64"/>
+    <polygon class="facet" data-region="Head" points="436,52 430,38 442,66"/>
+    <polygon class="facet" data-region="Head" points="436,52 426,64 442,66"/>
+    <polygon class="facet" data-region="Head" points="358,66 360,76 374,64"/>
+    <polygon class="facet" data-region="Head" points="374,64 360,76 372,73"/>
+    <polygon class="facet" data-region="Head" points="374,64 372,73 388,66"/>
+    <polygon class="facet" data-region="Head" points="388,66 372,73 384,75"/>
+    <polygon class="facet" data-region="Head" points="388,66 384,75 400,64"/>
+    <polygon class="facet" data-region="Head" points="400,64 400,74 416,75"/>
+    <polygon class="facet" data-region="Head" points="400,64 412,66 416,75"/>
+    <polygon class="facet" data-region="Head" points="412,66 416,75 428,73"/>
+    <polygon class="facet" data-region="Head" points="412,66 428,73 426,64"/>
+    <polygon class="facet" data-region="Head" points="426,64 428,73 440,76"/>
+    <polygon class="facet" data-region="Head" points="426,64 440,76 442,66"/>
+    <polygon class="facet" data-region="Head" points="360,76 372,73 370,82"/>
+    <polygon class="facet" data-region="Head" points="372,73 384,75 370,82"/>
+    <polygon class="facet" data-region="Head" points="428,73 440,76 430,82"/>
+    <polygon class="facet" data-region="Head" points="416,75 428,73 430,82"/>
+    <polygon class="facet" data-region="Head" points="400,64 384,75 400,74"/>
+    <polygon class="facet" data-region="Head" points="360,76 370,82 356,86"/>
+    <polygon class="facet" data-region="Head" points="358,66 360,76 356,86"/>
+    <polygon class="facet" data-region="Head" points="440,76 430,82 444,86"/>
+    <polygon class="facet" data-region="Head" points="442,66 440,76 444,86"/>
+    <polygon class="facet" data-region="Head" points="356,86 370,82 354,100"/>
+    <polygon class="facet" data-region="Head" points="444,86 430,82 446,100"/>
+    <polygon class="facet" data-region="Head" points="384,75 400,74 400,82"/>
+    <polygon class="facet" data-region="Head" points="400,74 416,75 400,82"/>
+    <polygon class="facet" data-region="Head" points="370,82 384,75 400,82"/>
+    <polygon class="facet" data-region="Head" points="430,82 416,75 400,82"/>
+    <polygon class="facet" data-region="Head" points="400,82 394,92 400,95"/>
+    <polygon class="facet" data-region="Head" points="400,82 406,92 400,95"/>
+    <polygon class="facet" data-region="Head" points="370,82 400,82 394,92"/>
+    <polygon class="facet" data-region="Head" points="430,82 400,82 406,92"/>
+    <polygon class="facet" data-region="Head" points="394,92 400,95 400,102"/>
+    <polygon class="facet" data-region="Head" points="400,95 406,92 400,102"/>
+    <polygon class="facet" data-region="Head" points="394,92 386,104 400,102"/>
+    <polygon class="facet" data-region="Head" points="406,92 414,104 400,102"/>
+    <polygon class="facet" data-region="Head" points="354,100 394,92 386,104"/>
+    <polygon class="facet" data-region="Head" points="446,100 406,92 414,104"/>
+    <polygon class="facet" data-region="Head" points="386,104 400,102 392,110"/>
+    <polygon class="facet" data-region="Head" points="400,102 414,104 408,110"/>
+    <polygon class="facet" data-region="Head" points="400,102 392,110 400,112"/>
+    <polygon class="facet" data-region="Head" points="400,102 400,112 408,110"/>
+    <polygon class="facet" data-region="Head" points="356,86 354,100 356,112"/>
+    <polygon class="facet" data-region="Head" points="444,86 446,100 444,112"/>
+    <polygon class="facet" data-region="Head" points="354,100 386,104 356,112"/>
+    <polygon class="facet" data-region="Head" points="446,100 414,104 444,112"/>
+    <polygon class="facet" data-region="Head" points="356,112 386,104 362,124"/>
+    <polygon class="facet" data-region="Head" points="444,112 414,104 438,124"/>
+    <polygon class="facet" data-region="Head" points="386,104 392,110 362,124"/>
+    <polygon class="facet" data-region="Head" points="414,104 408,110 438,124"/>
+    <polygon class="facet" data-region="Head" points="362,124 392,110 374,134"/>
+    <polygon class="facet" data-region="Head" points="438,124 408,110 426,134"/>
+    <polygon class="facet" data-region="Head" points="392,110 400,112 374,134"/>
+    <polygon class="facet" data-region="Head" points="400,112 408,110 426,134"/>
+    <polygon class="facet" data-region="Head" points="374,134 400,112 400,138"/>
+    <polygon class="facet" data-region="Head" points="426,134 400,112 400,138"/>
   </g>
   <g id="neck">
-    <polygon class="facet" data-region="Neck" points="318,142 332,148 326,160"/>
-    <polygon class="facet" data-region="Neck" points="382,142 368,148 374,160"/>
-    <polygon class="facet" data-region="Neck" points="332,148 350,152 326,160"/>
-    <polygon class="facet" data-region="Neck" points="350,152 368,148 374,160"/>
-    <polygon class="facet" data-region="Neck" points="350,152 326,160 350,158"/>
-    <polygon class="facet" data-region="Neck" points="350,152 374,160 350,158"/>
-    <polygon class="facet" data-region="Neck" points="326,160 350,158 322,174"/>
-    <polygon class="facet" data-region="Neck" points="350,158 374,160 378,174"/>
-    <polygon class="facet" data-region="Neck" points="350,158 322,174 350,172"/>
-    <polygon class="facet" data-region="Neck" points="350,158 378,174 350,172"/>
+    <polygon class="facet" data-region="Neck" points="362,124 374,134 378,148"/>
+    <polygon class="facet" data-region="Neck" points="438,124 426,134 422,148"/>
+    <polygon class="facet" data-region="Neck" points="374,134 400,138 378,148"/>
+    <polygon class="facet" data-region="Neck" points="400,138 426,134 422,148"/>
+    <polygon class="facet" data-region="Neck" points="400,138 378,148 400,146"/>
+    <polygon class="facet" data-region="Neck" points="400,138 400,146 422,148"/>
+    <polygon class="facet" data-region="Neck" points="378,148 400,146 374,162"/>
+    <polygon class="facet" data-region="Neck" points="400,146 422,148 426,162"/>
+    <polygon class="facet" data-region="Neck" points="400,146 374,162 400,160"/>
+    <polygon class="facet" data-region="Neck" points="400,146 400,160 426,162"/>
+    <polygon class="facet" data-region="Neck" points="374,162 400,160 370,176"/>
+    <polygon class="facet" data-region="Neck" points="400,160 426,162 430,176"/>
+    <polygon class="facet" data-region="Neck" points="400,160 370,176 400,174"/>
+    <polygon class="facet" data-region="Neck" points="400,160 400,174 430,176"/>
   </g>
   <g id="shoulder">
-    <polygon class="facet" data-region="Shoulder" points="322,174 290,180 304,186"/>
-    <polygon class="facet" data-region="Shoulder" points="378,174 410,180 396,186"/>
-    <polygon class="facet" data-region="Shoulder" points="322,174 350,172 304,186"/>
-    <polygon class="facet" data-region="Shoulder" points="350,172 378,174 396,186"/>
-    <polygon class="facet" data-region="Shoulder" points="350,172 304,186 350,182"/>
-    <polygon class="facet" data-region="Shoulder" points="350,172 350,182 396,186"/>
-    <polygon class="facet" data-region="Shoulder" points="290,180 254,186 304,186"/>
-    <polygon class="facet" data-region="Shoulder" points="410,180 446,186 396,186"/>
-    <polygon class="facet" data-region="Shoulder" points="254,186 222,196 206,212"/>
-    <polygon class="facet" data-region="Shoulder" points="446,186 478,196 494,212"/>
-    <polygon class="facet" data-region="Shoulder" points="254,186 206,212 296,204"/>
-    <polygon class="facet" data-region="Shoulder" points="446,186 494,212 404,204"/>
-    <polygon class="facet" data-region="Shoulder" points="254,186 304,186 296,204"/>
-    <polygon class="facet" data-region="Shoulder" points="446,186 396,186 404,204"/>
+    <polygon class="facet" data-region="Shoulder" points="370,176 340,182 354,184"/>
+    <polygon class="facet" data-region="Shoulder" points="430,176 460,182 446,184"/>
+    <polygon class="facet" data-region="Shoulder" points="370,176 400,174 354,184"/>
+    <polygon class="facet" data-region="Shoulder" points="400,174 430,176 446,184"/>
+    <polygon class="facet" data-region="Shoulder" points="400,174 354,184 400,180"/>
+    <polygon class="facet" data-region="Shoulder" points="400,174 400,180 446,184"/>
+    <polygon class="facet" data-region="Shoulder" points="340,182 302,188 354,184"/>
+    <polygon class="facet" data-region="Shoulder" points="460,182 498,188 446,184"/>
+    <polygon class="facet" data-region="Shoulder" points="302,188 268,198 252,216"/>
+    <polygon class="facet" data-region="Shoulder" points="498,188 532,198 548,216"/>
+    <polygon class="facet" data-region="Shoulder" points="302,188 268,198 344,202"/>
+    <polygon class="facet" data-region="Shoulder" points="498,188 532,198 456,202"/>
+    <polygon class="facet" data-region="Shoulder" points="302,188 354,184 344,202"/>
+    <polygon class="facet" data-region="Shoulder" points="498,188 446,184 456,202"/>
   </g>
   <g id="upper-torso">
-    <polygon class="facet" data-region="Upper Torso" points="304,186 350,182 350,198"/>
-    <polygon class="facet" data-region="Upper Torso" points="350,182 396,186 350,198"/>
-    <polygon class="facet" data-region="Upper Torso" points="304,186 296,204 350,198"/>
-    <polygon class="facet" data-region="Upper Torso" points="396,186 404,204 350,198"/>
-    <polygon class="facet" data-region="Upper Torso" points="296,204 350,198 290,222"/>
-    <polygon class="facet" data-region="Upper Torso" points="350,198 404,204 410,222"/>
-    <polygon class="facet" data-region="Upper Torso" points="350,198 290,222 350,216"/>
-    <polygon class="facet" data-region="Upper Torso" points="350,198 350,216 410,222"/>
-    <polygon class="facet" data-region="Upper Torso" points="290,222 350,216 286,240"/>
-    <polygon class="facet" data-region="Upper Torso" points="350,216 410,222 414,240"/>
-    <polygon class="facet" data-region="Upper Torso" points="350,216 286,240 350,234"/>
-    <polygon class="facet" data-region="Upper Torso" points="350,216 350,234 414,240"/>
-    <polygon class="facet" data-region="Upper Torso" points="286,240 350,234 316,256"/>
-    <polygon class="facet" data-region="Upper Torso" points="350,234 414,240 384,256"/>
-    <polygon class="facet" data-region="Upper Torso" points="286,240 284,260 316,256"/>
-    <polygon class="facet" data-region="Upper Torso" points="414,240 416,260 384,256"/>
-    <polygon class="facet" data-region="Upper Torso" points="350,234 316,256 350,254"/>
-    <polygon class="facet" data-region="Upper Torso" points="350,234 350,254 384,256"/>
-    <polygon class="facet" data-region="Upper Torso" points="206,212 290,222 218,222"/>
-    <polygon class="facet" data-region="Upper Torso" points="494,212 410,222 482,222"/>
-    <polygon class="facet" data-region="Upper Torso" points="296,204 290,222 218,222"/>
-    <polygon class="facet" data-region="Upper Torso" points="404,204 410,222 482,222"/>
+    <polygon class="facet" data-region="Upper Torso" points="354,184 400,180 372,196"/>
+    <polygon class="facet" data-region="Upper Torso" points="400,180 446,184 428,196"/>
+    <polygon class="facet" data-region="Upper Torso" points="354,184 344,202 372,196"/>
+    <polygon class="facet" data-region="Upper Torso" points="446,184 456,202 428,196"/>
+    <polygon class="facet" data-region="Upper Torso" points="400,180 372,196 400,194"/>
+    <polygon class="facet" data-region="Upper Torso" points="400,180 400,194 428,196"/>
+    <polygon class="facet" data-region="Upper Torso" points="344,202 372,196 338,222"/>
+    <polygon class="facet" data-region="Upper Torso" points="372,196 400,194 366,218"/>
+    <polygon class="facet" data-region="Upper Torso" points="372,196 338,222 366,218"/>
+    <polygon class="facet" data-region="Upper Torso" points="400,194 428,196 434,218"/>
+    <polygon class="facet" data-region="Upper Torso" points="400,194 400,214 434,218"/>
+    <polygon class="facet" data-region="Upper Torso" points="400,194 366,218 400,214"/>
+    <polygon class="facet" data-region="Upper Torso" points="428,196 456,202 462,222"/>
+    <polygon class="facet" data-region="Upper Torso" points="428,196 434,218 462,222"/>
+    <polygon class="facet" data-region="Upper Torso" points="338,222 366,218 334,244"/>
+    <polygon class="facet" data-region="Upper Torso" points="366,218 334,244 364,238"/>
+    <polygon class="facet" data-region="Upper Torso" points="366,218 400,214 364,238"/>
+    <polygon class="facet" data-region="Upper Torso" points="400,214 364,238 400,236"/>
+    <polygon class="facet" data-region="Upper Torso" points="400,214 434,218 436,238"/>
+    <polygon class="facet" data-region="Upper Torso" points="400,214 400,236 436,238"/>
+    <polygon class="facet" data-region="Upper Torso" points="434,218 462,222 466,244"/>
+    <polygon class="facet" data-region="Upper Torso" points="434,218 436,238 466,244"/>
+    <polygon class="facet" data-region="Upper Torso" points="334,244 364,238 330,268"/>
+    <polygon class="facet" data-region="Upper Torso" points="364,238 330,268 362,262"/>
+    <polygon class="facet" data-region="Upper Torso" points="364,238 400,236 362,262"/>
+    <polygon class="facet" data-region="Upper Torso" points="400,236 362,262 400,260"/>
+    <polygon class="facet" data-region="Upper Torso" points="400,236 436,238 438,262"/>
+    <polygon class="facet" data-region="Upper Torso" points="400,236 400,260 438,262"/>
+    <polygon class="facet" data-region="Upper Torso" points="436,238 466,244 470,268"/>
+    <polygon class="facet" data-region="Upper Torso" points="436,238 438,262 470,268"/>
+    <polygon class="facet" data-region="Upper Torso" points="344,202 338,222 264,226"/>
+    <polygon class="facet" data-region="Upper Torso" points="456,202 462,222 536,226"/>
   </g>
   <g id="lower-torso">
-    <polygon class="facet" data-region="Lower Torso" points="284,260 316,256 288,282"/>
-    <polygon class="facet" data-region="Lower Torso" points="316,256 288,282 320,278"/>
-    <polygon class="facet" data-region="Lower Torso" points="316,256 350,254 320,278"/>
-    <polygon class="facet" data-region="Lower Torso" points="350,254 320,278 350,276"/>
-    <polygon class="facet" data-region="Lower Torso" points="350,254 384,256 380,278"/>
-    <polygon class="facet" data-region="Lower Torso" points="350,254 350,276 380,278"/>
-    <polygon class="facet" data-region="Lower Torso" points="384,256 416,260 412,282"/>
-    <polygon class="facet" data-region="Lower Torso" points="384,256 380,278 412,282"/>
-    <polygon class="facet" data-region="Lower Torso" points="288,282 320,278 286,304"/>
-    <polygon class="facet" data-region="Lower Torso" points="320,278 286,304 318,300"/>
-    <polygon class="facet" data-region="Lower Torso" points="320,278 350,276 318,300"/>
-    <polygon class="facet" data-region="Lower Torso" points="350,276 318,300 350,298"/>
-    <polygon class="facet" data-region="Lower Torso" points="350,276 380,278 382,300"/>
-    <polygon class="facet" data-region="Lower Torso" points="350,276 350,298 382,300"/>
-    <polygon class="facet" data-region="Lower Torso" points="380,278 412,282 414,304"/>
-    <polygon class="facet" data-region="Lower Torso" points="380,278 382,300 414,304"/>
+    <polygon class="facet" data-region="Lower Torso" points="330,268 362,262 334,296"/>
+    <polygon class="facet" data-region="Lower Torso" points="362,262 334,296 364,290"/>
+    <polygon class="facet" data-region="Lower Torso" points="362,262 400,260 364,290"/>
+    <polygon class="facet" data-region="Lower Torso" points="400,260 364,290 400,288"/>
+    <polygon class="facet" data-region="Lower Torso" points="400,260 438,262 436,290"/>
+    <polygon class="facet" data-region="Lower Torso" points="400,260 400,288 436,290"/>
+    <polygon class="facet" data-region="Lower Torso" points="438,262 470,268 466,296"/>
+    <polygon class="facet" data-region="Lower Torso" points="438,262 436,290 466,296"/>
+    <polygon class="facet" data-region="Lower Torso" points="334,296 364,290 332,324"/>
+    <polygon class="facet" data-region="Lower Torso" points="364,290 332,324 364,318"/>
+    <polygon class="facet" data-region="Lower Torso" points="364,290 400,288 364,318"/>
+    <polygon class="facet" data-region="Lower Torso" points="400,288 364,318 400,316"/>
+    <polygon class="facet" data-region="Lower Torso" points="400,288 436,290 436,318"/>
+    <polygon class="facet" data-region="Lower Torso" points="400,288 400,316 436,318"/>
+    <polygon class="facet" data-region="Lower Torso" points="436,290 466,296 468,324"/>
+    <polygon class="facet" data-region="Lower Torso" points="436,290 436,318 468,324"/>
   </g>
   <g id="hips">
-    <polygon class="facet" data-region="Hips" points="286,304 318,300 278,326"/>
-    <polygon class="facet" data-region="Hips" points="318,300 278,326 312,322"/>
-    <polygon class="facet" data-region="Hips" points="318,300 350,298 312,322"/>
-    <polygon class="facet" data-region="Hips" points="350,298 312,322 350,320"/>
-    <polygon class="facet" data-region="Hips" points="350,298 382,300 388,322"/>
-    <polygon class="facet" data-region="Hips" points="350,298 350,320 388,322"/>
-    <polygon class="facet" data-region="Hips" points="382,300 414,304 422,326"/>
-    <polygon class="facet" data-region="Hips" points="382,300 388,322 422,326"/>
-    <polygon class="facet" data-region="Hips" points="278,326 312,322 274,348"/>
-    <polygon class="facet" data-region="Hips" points="312,322 274,348 308,342"/>
-    <polygon class="facet" data-region="Hips" points="312,322 350,320 308,342"/>
-    <polygon class="facet" data-region="Hips" points="350,320 308,342 350,338"/>
-    <polygon class="facet" data-region="Hips" points="350,320 388,322 392,342"/>
-    <polygon class="facet" data-region="Hips" points="350,320 350,338 392,342"/>
-    <polygon class="facet" data-region="Hips" points="388,322 422,326 426,348"/>
-    <polygon class="facet" data-region="Hips" points="388,322 392,342 426,348"/>
-    <polygon class="facet" data-region="Hips" points="274,348 308,342 278,368"/>
-    <polygon class="facet" data-region="Hips" points="308,342 278,368 312,362"/>
-    <polygon class="facet" data-region="Hips" points="308,342 350,338 312,362"/>
-    <polygon class="facet" data-region="Hips" points="350,338 312,362 350,358"/>
-    <polygon class="facet" data-region="Hips" points="350,338 392,342 388,362"/>
-    <polygon class="facet" data-region="Hips" points="350,338 350,358 388,362"/>
-    <polygon class="facet" data-region="Hips" points="392,342 426,348 422,368"/>
-    <polygon class="facet" data-region="Hips" points="392,342 388,362 422,368"/>
-    <polygon class="facet" data-region="Hips" points="278,368 312,362 272,388"/>
-    <polygon class="facet" data-region="Hips" points="312,362 350,358 320,382"/>
-    <polygon class="facet" data-region="Hips" points="350,358 388,362 380,382"/>
-    <polygon class="facet" data-region="Hips" points="388,362 422,368 428,388"/>
-    <polygon class="facet" data-region="Hips" points="350,358 320,382 350,386"/>
-    <polygon class="facet" data-region="Hips" points="350,358 350,386 380,382"/>
+    <polygon class="facet" data-region="Hips" points="332,324 364,318 324,352"/>
+    <polygon class="facet" data-region="Hips" points="364,318 324,352 358,346"/>
+    <polygon class="facet" data-region="Hips" points="364,318 400,316 358,346"/>
+    <polygon class="facet" data-region="Hips" points="400,316 358,346 400,342"/>
+    <polygon class="facet" data-region="Hips" points="400,316 436,318 442,346"/>
+    <polygon class="facet" data-region="Hips" points="400,316 400,342 442,346"/>
+    <polygon class="facet" data-region="Hips" points="436,318 468,324 476,352"/>
+    <polygon class="facet" data-region="Hips" points="436,318 442,346 476,352"/>
+    <polygon class="facet" data-region="Hips" points="324,352 358,346 318,378"/>
+    <polygon class="facet" data-region="Hips" points="358,346 318,378 354,370"/>
+    <polygon class="facet" data-region="Hips" points="358,346 400,342 354,370"/>
+    <polygon class="facet" data-region="Hips" points="400,342 354,370 400,366"/>
+    <polygon class="facet" data-region="Hips" points="400,342 442,346 446,370"/>
+    <polygon class="facet" data-region="Hips" points="400,342 400,366 446,370"/>
+    <polygon class="facet" data-region="Hips" points="442,346 476,352 482,378"/>
+    <polygon class="facet" data-region="Hips" points="442,346 446,370 482,378"/>
+    <polygon class="facet" data-region="Hips" points="318,378 354,370 314,402"/>
+    <polygon class="facet" data-region="Hips" points="354,370 314,402 350,394"/>
+    <polygon class="facet" data-region="Hips" points="354,370 400,366 350,394"/>
+    <polygon class="facet" data-region="Hips" points="400,366 350,394 400,390"/>
+    <polygon class="facet" data-region="Hips" points="400,366 446,370 450,394"/>
+    <polygon class="facet" data-region="Hips" points="400,366 400,390 450,394"/>
+    <polygon class="facet" data-region="Hips" points="446,370 482,378 486,402"/>
+    <polygon class="facet" data-region="Hips" points="446,370 450,394 486,402"/>
+    <polygon class="facet" data-region="Hips" points="314,402 350,394 310,420"/>
+    <polygon class="facet" data-region="Hips" points="350,394 400,390 362,414"/>
+    <polygon class="facet" data-region="Hips" points="400,390 450,394 438,414"/>
+    <polygon class="facet" data-region="Hips" points="450,394 486,402 490,420"/>
+    <polygon class="facet" data-region="Hips" points="400,390 362,414 400,418"/>
+    <polygon class="facet" data-region="Hips" points="400,390 400,418 438,414"/>
   </g>
   <g id="left-upper-arm">
-    <polygon class="facet" data-region="Left Upper Arm" points="206,212 196,226 218,222"/>
-    <polygon class="facet" data-region="Left Upper Arm" points="206,212 296,204 218,222"/>
-    <polygon class="facet" data-region="Left Upper Arm" points="196,226 218,222 182,248"/>
-    <polygon class="facet" data-region="Left Upper Arm" points="218,222 182,248 204,244"/>
-    <polygon class="facet" data-region="Left Upper Arm" points="182,248 204,244 170,270"/>
-    <polygon class="facet" data-region="Left Upper Arm" points="204,244 170,270 192,266"/>
-    <polygon class="facet" data-region="Left Upper Arm" points="170,270 192,266 160,292"/>
-    <polygon class="facet" data-region="Left Upper Arm" points="192,266 160,292 180,288"/>
-    <polygon class="facet" data-region="Left Upper Arm" points="160,292 180,288 152,308"/>
-    <polygon class="facet" data-region="Left Upper Arm" points="180,288 152,308 170,304"/>
-    <polygon class="facet" data-region="Left Upper Arm" points="152,308 170,304 160,312"/>
+    <polygon class="facet" data-region="Left Upper Arm" points="252,216 242,232 264,226"/>
+    <polygon class="facet" data-region="Left Upper Arm" points="252,216 344,202 264,226"/>
+    <polygon class="facet" data-region="Left Upper Arm" points="268,198 252,216 242,232"/>
+    <polygon class="facet" data-region="Left Upper Arm" points="242,232 264,226 226,256"/>
+    <polygon class="facet" data-region="Left Upper Arm" points="264,226 226,256 248,250"/>
+    <polygon class="facet" data-region="Left Upper Arm" points="226,256 248,250 212,280"/>
+    <polygon class="facet" data-region="Left Upper Arm" points="248,250 212,280 234,274"/>
+    <polygon class="facet" data-region="Left Upper Arm" points="212,280 234,274 198,304"/>
+    <polygon class="facet" data-region="Left Upper Arm" points="234,274 198,304 220,298"/>
+    <polygon class="facet" data-region="Left Upper Arm" points="198,304 220,298 188,322"/>
+    <polygon class="facet" data-region="Left Upper Arm" points="220,298 188,322 210,316"/>
+    <polygon class="facet" data-region="Left Upper Arm" points="188,322 210,316 196,330"/>
   </g>
   <g id="right-upper-arm">
-    <polygon class="facet" data-region="Right Upper Arm" points="494,212 504,226 482,222"/>
-    <polygon class="facet" data-region="Right Upper Arm" points="494,212 404,204 482,222"/>
-    <polygon class="facet" data-region="Right Upper Arm" points="504,226 482,222 518,248"/>
-    <polygon class="facet" data-region="Right Upper Arm" points="482,222 518,248 496,244"/>
-    <polygon class="facet" data-region="Right Upper Arm" points="518,248 496,244 530,270"/>
-    <polygon class="facet" data-region="Right Upper Arm" points="496,244 530,270 508,266"/>
-    <polygon class="facet" data-region="Right Upper Arm" points="530,270 508,266 540,292"/>
-    <polygon class="facet" data-region="Right Upper Arm" points="508,266 540,292 520,288"/>
-    <polygon class="facet" data-region="Right Upper Arm" points="540,292 520,288 548,308"/>
-    <polygon class="facet" data-region="Right Upper Arm" points="520,288 548,308 530,304"/>
-    <polygon class="facet" data-region="Right Upper Arm" points="548,308 530,304 540,312"/>
+    <polygon class="facet" data-region="Right Upper Arm" points="548,216 558,232 536,226"/>
+    <polygon class="facet" data-region="Right Upper Arm" points="548,216 456,202 536,226"/>
+    <polygon class="facet" data-region="Right Upper Arm" points="532,198 548,216 558,232"/>
+    <polygon class="facet" data-region="Right Upper Arm" points="558,232 536,226 574,256"/>
+    <polygon class="facet" data-region="Right Upper Arm" points="536,226 574,256 552,250"/>
+    <polygon class="facet" data-region="Right Upper Arm" points="574,256 552,250 588,280"/>
+    <polygon class="facet" data-region="Right Upper Arm" points="552,250 588,280 566,274"/>
+    <polygon class="facet" data-region="Right Upper Arm" points="588,280 566,274 602,304"/>
+    <polygon class="facet" data-region="Right Upper Arm" points="566,274 602,304 580,298"/>
+    <polygon class="facet" data-region="Right Upper Arm" points="602,304 580,298 612,322"/>
+    <polygon class="facet" data-region="Right Upper Arm" points="580,298 612,322 590,316"/>
+    <polygon class="facet" data-region="Right Upper Arm" points="612,322 590,316 604,330"/>
   </g>
   <g id="left-forearm">
-    <polygon class="facet" data-region="Left Forearm" points="152,308 160,312 146,328"/>
-    <polygon class="facet" data-region="Left Forearm" points="170,304 160,312 164,324"/>
-    <polygon class="facet" data-region="Left Forearm" points="160,312 146,328 164,324"/>
-    <polygon class="facet" data-region="Left Forearm" points="146,328 164,324 140,350"/>
-    <polygon class="facet" data-region="Left Forearm" points="164,324 140,350 158,346"/>
-    <polygon class="facet" data-region="Left Forearm" points="140,350 158,346 134,372"/>
-    <polygon class="facet" data-region="Left Forearm" points="158,346 134,372 152,368"/>
-    <polygon class="facet" data-region="Left Forearm" points="134,372 152,368 128,392"/>
-    <polygon class="facet" data-region="Left Forearm" points="152,368 128,392 146,388"/>
+    <polygon class="facet" data-region="Left Forearm" points="188,322 196,330 182,346"/>
+    <polygon class="facet" data-region="Left Forearm" points="210,316 196,330 204,340"/>
+    <polygon class="facet" data-region="Left Forearm" points="196,330 182,346 204,340"/>
+    <polygon class="facet" data-region="Left Forearm" points="182,346 204,340 174,372"/>
+    <polygon class="facet" data-region="Left Forearm" points="204,340 174,372 196,366"/>
+    <polygon class="facet" data-region="Left Forearm" points="174,372 196,366 166,398"/>
+    <polygon class="facet" data-region="Left Forearm" points="196,366 166,398 188,392"/>
+    <polygon class="facet" data-region="Left Forearm" points="166,398 188,392 160,420"/>
+    <polygon class="facet" data-region="Left Forearm" points="188,392 160,420 180,414"/>
   </g>
   <g id="right-forearm">
-    <polygon class="facet" data-region="Right Forearm" points="548,308 540,312 554,328"/>
-    <polygon class="facet" data-region="Right Forearm" points="530,304 540,312 536,324"/>
-    <polygon class="facet" data-region="Right Forearm" points="540,312 554,328 536,324"/>
-    <polygon class="facet" data-region="Right Forearm" points="554,328 536,324 560,350"/>
-    <polygon class="facet" data-region="Right Forearm" points="536,324 560,350 542,346"/>
-    <polygon class="facet" data-region="Right Forearm" points="560,350 542,346 566,372"/>
-    <polygon class="facet" data-region="Right Forearm" points="542,346 566,372 548,368"/>
-    <polygon class="facet" data-region="Right Forearm" points="566,372 548,368 572,392"/>
-    <polygon class="facet" data-region="Right Forearm" points="548,368 572,392 554,388"/>
+    <polygon class="facet" data-region="Right Forearm" points="612,322 604,330 618,346"/>
+    <polygon class="facet" data-region="Right Forearm" points="590,316 604,330 596,340"/>
+    <polygon class="facet" data-region="Right Forearm" points="604,330 618,346 596,340"/>
+    <polygon class="facet" data-region="Right Forearm" points="618,346 596,340 626,372"/>
+    <polygon class="facet" data-region="Right Forearm" points="596,340 626,372 604,366"/>
+    <polygon class="facet" data-region="Right Forearm" points="626,372 604,366 634,398"/>
+    <polygon class="facet" data-region="Right Forearm" points="604,366 634,398 612,392"/>
+    <polygon class="facet" data-region="Right Forearm" points="634,398 612,392 640,420"/>
+    <polygon class="facet" data-region="Right Forearm" points="612,392 640,420 620,414"/>
   </g>
   <g id="left-hand">
-    <polygon class="facet" data-region="Left Hand" points="128,392 146,388 124,404"/>
-    <polygon class="facet" data-region="Left Hand" points="146,388 124,404 140,400"/>
-    <polygon class="facet" data-region="Left Hand" points="124,404 140,400 132,408"/>
-    <polygon class="facet" data-region="Left Hand" points="124,404 132,408 120,416"/>
-    <polygon class="facet" data-region="Left Hand" points="140,400 132,408 142,414"/>
-    <polygon class="facet" data-region="Left Hand" points="132,408 120,416 130,420"/>
-    <polygon class="facet" data-region="Left Hand" points="132,408 142,414 130,420"/>
-    <polygon class="facet" data-region="Left Hand" points="124,404 120,416 116,410"/>
-    <polygon class="facet" data-region="Left Hand" points="116,410 110,420 120,416"/>
-    <polygon class="facet" data-region="Left Hand" points="120,416 130,420 118,424"/>
-    <polygon class="facet" data-region="Left Hand" points="118,424 116,430 120,416"/>
-    <polygon class="facet" data-region="Left Hand" points="130,420 126,426 126,434"/>
-    <polygon class="facet" data-region="Left Hand" points="130,420 126,426 134,424"/>
-    <polygon class="facet" data-region="Left Hand" points="134,424 134,432 130,420"/>
-    <polygon class="facet" data-region="Left Hand" points="142,414 130,420 140,420"/>
-    <polygon class="facet" data-region="Left Hand" points="140,420 142,426 142,414"/>
+    <polygon class="facet" data-region="Left Hand" points="160,420 180,414 156,434"/>
+    <polygon class="facet" data-region="Left Hand" points="180,414 156,434 174,428"/>
+    <polygon class="facet" data-region="Left Hand" points="156,434 174,428 164,440"/>
+    <polygon class="facet" data-region="Left Hand" points="156,434 164,440 150,446"/>
+    <polygon class="facet" data-region="Left Hand" points="174,428 164,440 176,442"/>
+    <polygon class="facet" data-region="Left Hand" points="164,440 150,446 158,454"/>
+    <polygon class="facet" data-region="Left Hand" points="164,440 176,442 158,454"/>
+    <polygon class="facet" data-region="Left Hand" points="156,434 150,446 148,440"/>
+    <polygon class="facet" data-region="Left Hand" points="148,440 142,448 150,446"/>
+    <polygon class="facet" data-region="Left Hand" points="142,448 138,458 150,446"/>
+    <polygon class="facet" data-region="Left Hand" points="150,446 158,454 148,462"/>
+    <polygon class="facet" data-region="Left Hand" points="148,462 144,472 158,454"/>
+    <polygon class="facet" data-region="Left Hand" points="158,454 156,466 152,478"/>
+    <polygon class="facet" data-region="Left Hand" points="158,454 156,466 164,464"/>
+    <polygon class="facet" data-region="Left Hand" points="164,464 162,476 158,454"/>
+    <polygon class="facet" data-region="Left Hand" points="176,442 158,454 172,458"/>
+    <polygon class="facet" data-region="Left Hand" points="172,458 172,468 176,442"/>
   </g>
   <g id="right-hand">
-    <polygon class="facet" data-region="Right Hand" points="572,392 554,388 576,404"/>
-    <polygon class="facet" data-region="Right Hand" points="554,388 576,404 560,400"/>
-    <polygon class="facet" data-region="Right Hand" points="576,404 560,400 568,408"/>
-    <polygon class="facet" data-region="Right Hand" points="576,404 568,408 580,416"/>
-    <polygon class="facet" data-region="Right Hand" points="560,400 568,408 558,414"/>
-    <polygon class="facet" data-region="Right Hand" points="568,408 580,416 570,420"/>
-    <polygon class="facet" data-region="Right Hand" points="568,408 558,414 570,420"/>
-    <polygon class="facet" data-region="Right Hand" points="576,404 580,416 584,410"/>
-    <polygon class="facet" data-region="Right Hand" points="584,410 590,420 580,416"/>
-    <polygon class="facet" data-region="Right Hand" points="580,416 570,420 582,424"/>
-    <polygon class="facet" data-region="Right Hand" points="582,424 584,430 580,416"/>
-    <polygon class="facet" data-region="Right Hand" points="570,420 574,426 574,434"/>
-    <polygon class="facet" data-region="Right Hand" points="570,420 574,426 566,424"/>
-    <polygon class="facet" data-region="Right Hand" points="566,424 566,432 570,420"/>
-    <polygon class="facet" data-region="Right Hand" points="558,414 570,420 560,420"/>
-    <polygon class="facet" data-region="Right Hand" points="560,420 558,426 558,414"/>
+    <polygon class="facet" data-region="Right Hand" points="640,420 620,414 644,434"/>
+    <polygon class="facet" data-region="Right Hand" points="620,414 644,434 626,428"/>
+    <polygon class="facet" data-region="Right Hand" points="644,434 626,428 636,440"/>
+    <polygon class="facet" data-region="Right Hand" points="644,434 636,440 650,446"/>
+    <polygon class="facet" data-region="Right Hand" points="626,428 636,440 624,442"/>
+    <polygon class="facet" data-region="Right Hand" points="636,440 650,446 642,454"/>
+    <polygon class="facet" data-region="Right Hand" points="636,440 624,442 642,454"/>
+    <polygon class="facet" data-region="Right Hand" points="644,434 650,446 652,440"/>
+    <polygon class="facet" data-region="Right Hand" points="652,440 658,448 650,446"/>
+    <polygon class="facet" data-region="Right Hand" points="658,448 662,458 650,446"/>
+    <polygon class="facet" data-region="Right Hand" points="650,446 642,454 652,462"/>
+    <polygon class="facet" data-region="Right Hand" points="652,462 656,472 642,454"/>
+    <polygon class="facet" data-region="Right Hand" points="642,454 644,466 648,478"/>
+    <polygon class="facet" data-region="Right Hand" points="642,454 644,466 636,464"/>
+    <polygon class="facet" data-region="Right Hand" points="636,464 638,476 642,454"/>
+    <polygon class="facet" data-region="Right Hand" points="624,442 642,454 628,458"/>
+    <polygon class="facet" data-region="Right Hand" points="628,458 628,468 624,442"/>
   </g>
   <g id="left-thigh">
-    <polygon class="facet" data-region="Left Thigh" points="278,368 272,388 268,410"/>
-    <polygon class="facet" data-region="Left Thigh" points="312,362 320,382 296,404"/>
-    <polygon class="facet" data-region="Left Thigh" points="278,368 312,362 296,404"/>
-    <polygon class="facet" data-region="Left Thigh" points="278,368 272,388 296,404"/>
-    <polygon class="facet" data-region="Left Thigh" points="272,388 268,410 296,404"/>
-    <polygon class="facet" data-region="Left Thigh" points="320,382 296,404 316,424"/>
-    <polygon class="facet" data-region="Left Thigh" points="268,410 296,404 264,436"/>
-    <polygon class="facet" data-region="Left Thigh" points="296,404 264,436 290,430"/>
-    <polygon class="facet" data-region="Left Thigh" points="296,404 290,430 316,424"/>
-    <polygon class="facet" data-region="Left Thigh" points="264,436 290,430 260,462"/>
-    <polygon class="facet" data-region="Left Thigh" points="290,430 260,462 286,458"/>
-    <polygon class="facet" data-region="Left Thigh" points="290,430 316,424 312,452"/>
-    <polygon class="facet" data-region="Left Thigh" points="290,430 286,458 312,452"/>
-    <polygon class="facet" data-region="Left Thigh" points="260,462 286,458 258,488"/>
-    <polygon class="facet" data-region="Left Thigh" points="286,458 258,488 282,484"/>
-    <polygon class="facet" data-region="Left Thigh" points="286,458 312,452 308,480"/>
-    <polygon class="facet" data-region="Left Thigh" points="286,458 282,484 308,480"/>
-    <polygon class="facet" data-region="Left Thigh" points="258,488 282,484 256,504"/>
-    <polygon class="facet" data-region="Left Thigh" points="282,484 256,504 280,502"/>
-    <polygon class="facet" data-region="Left Thigh" points="282,484 308,480 306,500"/>
-    <polygon class="facet" data-region="Left Thigh" points="282,484 280,502 306,500"/>
-    <polygon class="facet" data-region="Left Thigh" points="256,504 280,502 268,516"/>
-    <polygon class="facet" data-region="Left Thigh" points="280,502 306,500 268,516"/>
+    <polygon class="facet" data-region="Left Thigh" points="314,402 310,420 340,412"/>
+    <polygon class="facet" data-region="Left Thigh" points="350,394 362,414 340,412"/>
+    <polygon class="facet" data-region="Left Thigh" points="314,402 350,394 340,412"/>
+    <polygon class="facet" data-region="Left Thigh" points="310,420 340,412 308,450"/>
+    <polygon class="facet" data-region="Left Thigh" points="340,412 308,450 336,442"/>
+    <polygon class="facet" data-region="Left Thigh" points="340,412 336,442 358,436"/>
+    <polygon class="facet" data-region="Left Thigh" points="362,414 340,412 358,436"/>
+    <polygon class="facet" data-region="Left Thigh" points="308,450 336,442 304,484"/>
+    <polygon class="facet" data-region="Left Thigh" points="336,442 304,484 332,476"/>
+    <polygon class="facet" data-region="Left Thigh" points="336,442 358,436 356,470"/>
+    <polygon class="facet" data-region="Left Thigh" points="336,442 332,476 356,470"/>
+    <polygon class="facet" data-region="Left Thigh" points="304,484 332,476 300,520"/>
+    <polygon class="facet" data-region="Left Thigh" points="332,476 300,520 328,512"/>
+    <polygon class="facet" data-region="Left Thigh" points="332,476 356,470 354,506"/>
+    <polygon class="facet" data-region="Left Thigh" points="332,476 328,512 354,506"/>
+    <polygon class="facet" data-region="Left Thigh" points="300,520 328,512 298,552"/>
+    <polygon class="facet" data-region="Left Thigh" points="328,512 298,552 324,546"/>
+    <polygon class="facet" data-region="Left Thigh" points="328,512 354,506 350,542"/>
+    <polygon class="facet" data-region="Left Thigh" points="328,512 324,546 350,542"/>
+    <polygon class="facet" data-region="Left Thigh" points="298,552 324,546 296,568"/>
+    <polygon class="facet" data-region="Left Thigh" points="324,546 296,568 312,564"/>
+    <polygon class="facet" data-region="Left Thigh" points="324,546 350,542 346,560"/>
+    <polygon class="facet" data-region="Left Thigh" points="324,546 312,564 346,560"/>
   </g>
   <g id="right-thigh">
-    <polygon class="facet" data-region="Right Thigh" points="422,368 428,388 432,410"/>
-    <polygon class="facet" data-region="Right Thigh" points="388,362 380,382 404,404"/>
-    <polygon class="facet" data-region="Right Thigh" points="388,362 422,368 404,404"/>
-    <polygon class="facet" data-region="Right Thigh" points="422,368 428,388 404,404"/>
-    <polygon class="facet" data-region="Right Thigh" points="428,388 432,410 404,404"/>
-    <polygon class="facet" data-region="Right Thigh" points="380,382 404,404 384,424"/>
-    <polygon class="facet" data-region="Right Thigh" points="432,410 404,404 436,436"/>
-    <polygon class="facet" data-region="Right Thigh" points="404,404 436,436 410,430"/>
-    <polygon class="facet" data-region="Right Thigh" points="404,404 410,430 384,424"/>
-    <polygon class="facet" data-region="Right Thigh" points="436,436 410,430 440,462"/>
-    <polygon class="facet" data-region="Right Thigh" points="410,430 440,462 414,458"/>
-    <polygon class="facet" data-region="Right Thigh" points="410,430 384,424 388,452"/>
-    <polygon class="facet" data-region="Right Thigh" points="410,430 414,458 388,452"/>
-    <polygon class="facet" data-region="Right Thigh" points="440,462 414,458 442,488"/>
-    <polygon class="facet" data-region="Right Thigh" points="414,458 442,488 418,484"/>
-    <polygon class="facet" data-region="Right Thigh" points="414,458 388,452 392,480"/>
-    <polygon class="facet" data-region="Right Thigh" points="414,458 418,484 392,480"/>
-    <polygon class="facet" data-region="Right Thigh" points="442,488 418,484 444,504"/>
-    <polygon class="facet" data-region="Right Thigh" points="418,484 444,504 420,502"/>
-    <polygon class="facet" data-region="Right Thigh" points="418,484 392,480 394,500"/>
-    <polygon class="facet" data-region="Right Thigh" points="418,484 420,502 394,500"/>
-    <polygon class="facet" data-region="Right Thigh" points="444,504 420,502 432,516"/>
-    <polygon class="facet" data-region="Right Thigh" points="420,502 394,500 432,516"/>
+    <polygon class="facet" data-region="Right Thigh" points="486,402 490,420 460,412"/>
+    <polygon class="facet" data-region="Right Thigh" points="450,394 438,414 460,412"/>
+    <polygon class="facet" data-region="Right Thigh" points="450,394 486,402 460,412"/>
+    <polygon class="facet" data-region="Right Thigh" points="490,420 460,412 492,450"/>
+    <polygon class="facet" data-region="Right Thigh" points="460,412 492,450 464,442"/>
+    <polygon class="facet" data-region="Right Thigh" points="460,412 464,442 442,436"/>
+    <polygon class="facet" data-region="Right Thigh" points="438,414 460,412 442,436"/>
+    <polygon class="facet" data-region="Right Thigh" points="492,450 464,442 496,484"/>
+    <polygon class="facet" data-region="Right Thigh" points="464,442 496,484 468,476"/>
+    <polygon class="facet" data-region="Right Thigh" points="464,442 442,436 444,470"/>
+    <polygon class="facet" data-region="Right Thigh" points="464,442 468,476 444,470"/>
+    <polygon class="facet" data-region="Right Thigh" points="496,484 468,476 500,520"/>
+    <polygon class="facet" data-region="Right Thigh" points="468,476 500,520 472,512"/>
+    <polygon class="facet" data-region="Right Thigh" points="468,476 444,470 446,506"/>
+    <polygon class="facet" data-region="Right Thigh" points="468,476 472,512 446,506"/>
+    <polygon class="facet" data-region="Right Thigh" points="500,520 472,512 502,552"/>
+    <polygon class="facet" data-region="Right Thigh" points="472,512 502,552 476,546"/>
+    <polygon class="facet" data-region="Right Thigh" points="472,512 446,506 450,542"/>
+    <polygon class="facet" data-region="Right Thigh" points="472,512 476,546 450,542"/>
+    <polygon class="facet" data-region="Right Thigh" points="502,552 476,546 504,568"/>
+    <polygon class="facet" data-region="Right Thigh" points="476,546 504,568 488,564"/>
+    <polygon class="facet" data-region="Right Thigh" points="476,546 450,542 454,560"/>
+    <polygon class="facet" data-region="Right Thigh" points="476,546 488,564 454,560"/>
   </g>
   <g id="left-calf">
-    <polygon class="facet" data-region="Left Calf" points="256,504 268,516 258,532"/>
-    <polygon class="facet" data-region="Left Calf" points="268,516 258,532 280,528"/>
-    <polygon class="facet" data-region="Left Calf" points="306,500 268,516 302,530"/>
-    <polygon class="facet" data-region="Left Calf" points="268,516 280,528 302,530"/>
-    <polygon class="facet" data-region="Left Calf" points="258,532 280,528 260,562"/>
-    <polygon class="facet" data-region="Left Calf" points="280,528 260,562 278,558"/>
-    <polygon class="facet" data-region="Left Calf" points="280,528 302,530 298,560"/>
-    <polygon class="facet" data-region="Left Calf" points="280,528 278,558 298,560"/>
-    <polygon class="facet" data-region="Left Calf" points="260,562 278,558 262,592"/>
-    <polygon class="facet" data-region="Left Calf" points="278,558 262,592 278,588"/>
-    <polygon class="facet" data-region="Left Calf" points="278,558 298,560 296,590"/>
-    <polygon class="facet" data-region="Left Calf" points="278,558 278,588 296,590"/>
-    <polygon class="facet" data-region="Left Calf" points="262,592 278,588 264,618"/>
-    <polygon class="facet" data-region="Left Calf" points="278,588 264,618 278,614"/>
-    <polygon class="facet" data-region="Left Calf" points="278,588 296,590 294,616"/>
-    <polygon class="facet" data-region="Left Calf" points="278,588 278,614 294,616"/>
-    <polygon class="facet" data-region="Left Calf" points="264,618 278,614 264,636"/>
-    <polygon class="facet" data-region="Left Calf" points="278,614 264,636 278,632"/>
-    <polygon class="facet" data-region="Left Calf" points="278,614 294,616 292,634"/>
-    <polygon class="facet" data-region="Left Calf" points="278,614 278,632 292,634"/>
+    <polygon class="facet" data-region="Left Calf" points="296,568 312,564 296,590"/>
+    <polygon class="facet" data-region="Left Calf" points="312,564 296,590 316,584"/>
+    <polygon class="facet" data-region="Left Calf" points="312,564 346,560 340,586"/>
+    <polygon class="facet" data-region="Left Calf" points="312,564 316,584 340,586"/>
+    <polygon class="facet" data-region="Left Calf" points="296,590 316,584 298,620"/>
+    <polygon class="facet" data-region="Left Calf" points="316,584 298,620 316,614"/>
+    <polygon class="facet" data-region="Left Calf" points="316,584 340,586 336,616"/>
+    <polygon class="facet" data-region="Left Calf" points="316,584 316,614 336,616"/>
+    <polygon class="facet" data-region="Left Calf" points="298,620 316,614 300,654"/>
+    <polygon class="facet" data-region="Left Calf" points="316,614 300,654 316,648"/>
+    <polygon class="facet" data-region="Left Calf" points="316,614 336,616 334,650"/>
+    <polygon class="facet" data-region="Left Calf" points="316,614 316,648 334,650"/>
+    <polygon class="facet" data-region="Left Calf" points="300,654 316,648 302,688"/>
+    <polygon class="facet" data-region="Left Calf" points="316,648 302,688 316,682"/>
+    <polygon class="facet" data-region="Left Calf" points="316,648 334,650 332,684"/>
+    <polygon class="facet" data-region="Left Calf" points="316,648 316,682 332,684"/>
+    <polygon class="facet" data-region="Left Calf" points="302,688 316,682 304,714"/>
+    <polygon class="facet" data-region="Left Calf" points="316,682 304,714 316,708"/>
+    <polygon class="facet" data-region="Left Calf" points="316,682 332,684 330,710"/>
+    <polygon class="facet" data-region="Left Calf" points="316,682 316,708 330,710"/>
   </g>
   <g id="right-calf">
-    <polygon class="facet" data-region="Right Calf" points="444,504 432,516 442,532"/>
-    <polygon class="facet" data-region="Right Calf" points="432,516 442,532 420,528"/>
-    <polygon class="facet" data-region="Right Calf" points="394,500 432,516 398,530"/>
-    <polygon class="facet" data-region="Right Calf" points="432,516 420,528 398,530"/>
-    <polygon class="facet" data-region="Right Calf" points="442,532 420,528 440,562"/>
-    <polygon class="facet" data-region="Right Calf" points="420,528 440,562 422,558"/>
-    <polygon class="facet" data-region="Right Calf" points="420,528 398,530 402,560"/>
-    <polygon class="facet" data-region="Right Calf" points="420,528 422,558 402,560"/>
-    <polygon class="facet" data-region="Right Calf" points="440,562 422,558 438,592"/>
-    <polygon class="facet" data-region="Right Calf" points="422,558 438,592 422,588"/>
-    <polygon class="facet" data-region="Right Calf" points="422,558 402,560 404,590"/>
-    <polygon class="facet" data-region="Right Calf" points="422,558 422,588 404,590"/>
-    <polygon class="facet" data-region="Right Calf" points="438,592 422,588 436,618"/>
-    <polygon class="facet" data-region="Right Calf" points="422,588 436,618 422,614"/>
-    <polygon class="facet" data-region="Right Calf" points="422,588 404,590 406,616"/>
-    <polygon class="facet" data-region="Right Calf" points="422,588 422,614 406,616"/>
-    <polygon class="facet" data-region="Right Calf" points="436,618 422,614 436,636"/>
-    <polygon class="facet" data-region="Right Calf" points="422,614 436,636 422,632"/>
-    <polygon class="facet" data-region="Right Calf" points="422,614 406,616 408,634"/>
-    <polygon class="facet" data-region="Right Calf" points="422,614 422,632 408,634"/>
+    <polygon class="facet" data-region="Right Calf" points="504,568 488,564 504,590"/>
+    <polygon class="facet" data-region="Right Calf" points="488,564 504,590 484,584"/>
+    <polygon class="facet" data-region="Right Calf" points="488,564 454,560 460,586"/>
+    <polygon class="facet" data-region="Right Calf" points="488,564 484,584 460,586"/>
+    <polygon class="facet" data-region="Right Calf" points="504,590 484,584 502,620"/>
+    <polygon class="facet" data-region="Right Calf" points="484,584 502,620 484,614"/>
+    <polygon class="facet" data-region="Right Calf" points="484,584 460,586 464,616"/>
+    <polygon class="facet" data-region="Right Calf" points="484,584 484,614 464,616"/>
+    <polygon class="facet" data-region="Right Calf" points="502,620 484,614 500,654"/>
+    <polygon class="facet" data-region="Right Calf" points="484,614 500,654 484,648"/>
+    <polygon class="facet" data-region="Right Calf" points="484,614 464,616 466,650"/>
+    <polygon class="facet" data-region="Right Calf" points="484,614 484,648 466,650"/>
+    <polygon class="facet" data-region="Right Calf" points="500,654 484,648 498,688"/>
+    <polygon class="facet" data-region="Right Calf" points="484,648 498,688 484,682"/>
+    <polygon class="facet" data-region="Right Calf" points="484,648 466,650 468,684"/>
+    <polygon class="facet" data-region="Right Calf" points="484,648 484,682 468,684"/>
+    <polygon class="facet" data-region="Right Calf" points="498,688 484,682 496,714"/>
+    <polygon class="facet" data-region="Right Calf" points="484,682 496,714 484,708"/>
+    <polygon class="facet" data-region="Right Calf" points="484,682 468,684 470,710"/>
+    <polygon class="facet" data-region="Right Calf" points="484,682 484,708 470,710"/>
   </g>
   <g id="left-foot">
-    <polygon class="facet" data-region="Left Foot" points="264,636 278,632 258,648"/>
-    <polygon class="facet" data-region="Left Foot" points="278,632 258,648 278,646"/>
-    <polygon class="facet" data-region="Left Foot" points="278,632 292,634 294,648"/>
-    <polygon class="facet" data-region="Left Foot" points="278,632 278,646 294,648"/>
-    <polygon class="facet" data-region="Left Foot" points="258,648 278,646 252,662"/>
-    <polygon class="facet" data-region="Left Foot" points="278,646 252,662 276,660"/>
-    <polygon class="facet" data-region="Left Foot" points="278,646 294,648 296,662"/>
-    <polygon class="facet" data-region="Left Foot" points="278,646 276,660 296,662"/>
-    <polygon class="facet" data-region="Left Foot" points="252,662 276,660 248,676"/>
-    <polygon class="facet" data-region="Left Foot" points="276,660 248,676 268,674"/>
-    <polygon class="facet" data-region="Left Foot" points="276,660 296,662 290,676"/>
-    <polygon class="facet" data-region="Left Foot" points="276,660 268,674 290,676"/>
-    <polygon class="facet" data-region="Left Foot" points="248,676 268,674 246,688"/>
-    <polygon class="facet" data-region="Left Foot" points="268,674 246,688 256,692"/>
-    <polygon class="facet" data-region="Left Foot" points="268,674 256,692 266,694"/>
-    <polygon class="facet" data-region="Left Foot" points="268,674 266,694 276,692"/>
-    <polygon class="facet" data-region="Left Foot" points="268,674 290,676 276,692"/>
-    <polygon class="facet" data-region="Left Foot" points="290,676 276,692 288,688"/>
+    <polygon class="facet" data-region="Left Foot" points="304,714 316,708 300,728"/>
+    <polygon class="facet" data-region="Left Foot" points="316,708 300,728 316,724"/>
+    <polygon class="facet" data-region="Left Foot" points="316,708 330,710 332,726"/>
+    <polygon class="facet" data-region="Left Foot" points="316,708 316,724 332,726"/>
+    <polygon class="facet" data-region="Left Foot" points="300,728 316,724 294,744"/>
+    <polygon class="facet" data-region="Left Foot" points="316,724 294,744 314,740"/>
+    <polygon class="facet" data-region="Left Foot" points="316,724 332,726 334,742"/>
+    <polygon class="facet" data-region="Left Foot" points="316,724 314,740 334,742"/>
+    <polygon class="facet" data-region="Left Foot" points="294,744 314,740 288,758"/>
+    <polygon class="facet" data-region="Left Foot" points="314,740 288,758 308,756"/>
+    <polygon class="facet" data-region="Left Foot" points="314,740 334,742 330,758"/>
+    <polygon class="facet" data-region="Left Foot" points="314,740 308,756 330,758"/>
+    <polygon class="facet" data-region="Left Foot" points="288,758 308,756 286,770"/>
+    <polygon class="facet" data-region="Left Foot" points="308,756 286,770 296,774"/>
+    <polygon class="facet" data-region="Left Foot" points="308,756 296,774 306,776"/>
+    <polygon class="facet" data-region="Left Foot" points="308,756 306,776 316,774"/>
+    <polygon class="facet" data-region="Left Foot" points="308,756 330,758 316,774"/>
+    <polygon class="facet" data-region="Left Foot" points="330,758 316,774 328,770"/>
   </g>
   <g id="right-foot">
-    <polygon class="facet" data-region="Right Foot" points="436,636 422,632 442,648"/>
-    <polygon class="facet" data-region="Right Foot" points="422,632 442,648 422,646"/>
-    <polygon class="facet" data-region="Right Foot" points="422,632 408,634 406,648"/>
-    <polygon class="facet" data-region="Right Foot" points="422,632 422,646 406,648"/>
-    <polygon class="facet" data-region="Right Foot" points="442,648 422,646 448,662"/>
-    <polygon class="facet" data-region="Right Foot" points="422,646 448,662 424,660"/>
-    <polygon class="facet" data-region="Right Foot" points="422,646 406,648 404,662"/>
-    <polygon class="facet" data-region="Right Foot" points="422,646 424,660 404,662"/>
-    <polygon class="facet" data-region="Right Foot" points="448,662 424,660 452,676"/>
-    <polygon class="facet" data-region="Right Foot" points="424,660 452,676 432,674"/>
-    <polygon class="facet" data-region="Right Foot" points="424,660 404,662 410,676"/>
-    <polygon class="facet" data-region="Right Foot" points="424,660 432,674 410,676"/>
-    <polygon class="facet" data-region="Right Foot" points="452,676 432,674 454,688"/>
-    <polygon class="facet" data-region="Right Foot" points="432,674 454,688 444,692"/>
-    <polygon class="facet" data-region="Right Foot" points="432,674 444,692 434,694"/>
-    <polygon class="facet" data-region="Right Foot" points="432,674 434,694 424,692"/>
-    <polygon class="facet" data-region="Right Foot" points="432,674 410,676 424,692"/>
-    <polygon class="facet" data-region="Right Foot" points="410,676 424,692 412,688"/>
+    <polygon class="facet" data-region="Right Foot" points="496,714 484,708 500,728"/>
+    <polygon class="facet" data-region="Right Foot" points="484,708 500,728 484,724"/>
+    <polygon class="facet" data-region="Right Foot" points="484,708 470,710 468,726"/>
+    <polygon class="facet" data-region="Right Foot" points="484,708 484,724 468,726"/>
+    <polygon class="facet" data-region="Right Foot" points="500,728 484,724 506,744"/>
+    <polygon class="facet" data-region="Right Foot" points="484,724 506,744 486,740"/>
+    <polygon class="facet" data-region="Right Foot" points="484,724 468,726 466,742"/>
+    <polygon class="facet" data-region="Right Foot" points="484,724 486,740 466,742"/>
+    <polygon class="facet" data-region="Right Foot" points="506,744 486,740 512,758"/>
+    <polygon class="facet" data-region="Right Foot" points="486,740 512,758 492,756"/>
+    <polygon class="facet" data-region="Right Foot" points="486,740 466,742 470,758"/>
+    <polygon class="facet" data-region="Right Foot" points="486,740 492,756 470,758"/>
+    <polygon class="facet" data-region="Right Foot" points="512,758 492,756 514,770"/>
+    <polygon class="facet" data-region="Right Foot" points="492,756 514,770 504,774"/>
+    <polygon class="facet" data-region="Right Foot" points="492,756 504,774 494,776"/>
+    <polygon class="facet" data-region="Right Foot" points="492,756 494,776 484,774"/>
+    <polygon class="facet" data-region="Right Foot" points="492,756 470,758 484,774"/>
+    <polygon class="facet" data-region="Right Foot" points="470,758 484,774 472,770"/>
   </g>
 </svg>
   </div>
-  <span class="footer-label">Hover to explore &bull; Click to select</span>
+  <span class="foot">Hover to explore &bull; Click to select</span>
 </div>
-<div class="tooltip" id="tooltip"></div>
+<div class="tip" id="tip"></div>
 <script>
 (function(){
-  const tooltip = document.getElementById('tooltip');
-  let active = null;
-  document.querySelectorAll('.facet').forEach(f => {
-    f.addEventListener('mouseenter', () => {
-      tooltip.textContent = f.getAttribute('data-region');
-      tooltip.classList.add('visible');
-    });
-    f.addEventListener('mousemove', e => {
-      tooltip.style.left = (e.clientX + 12) + 'px';
-      tooltip.style.top = (e.clientY - 8) + 'px';
-    });
-    f.addEventListener('mouseleave', () => tooltip.classList.remove('visible'));
-    f.addEventListener('click', e => {
-      e.stopPropagation();
-      if(active) active.classList.remove('active');
-      if(active === f){ active = null; return; }
-      f.classList.add('active');
-      active = f;
-    });
+  const t=document.getElementById('tip');let a=null;
+  document.querySelectorAll('.facet').forEach(f=>{
+    f.addEventListener('mouseenter',()=>{t.textContent=f.dataset.region;t.classList.add('on')});
+    f.addEventListener('mousemove',e=>{t.style.left=(e.clientX+12)+'px';t.style.top=(e.clientY-8)+'px'});
+    f.addEventListener('mouseleave',()=>t.classList.remove('on'));
+    f.addEventListener('click',e=>{e.stopPropagation();if(a)a.classList.remove('active');if(a===f){a=null;return}f.classList.add('active');a=f});
   });
-  document.addEventListener('click', () => {
-    if(active){ active.classList.remove('active'); active = null; }
-  });
+  document.addEventListener('click',()=>{if(a){a.classList.remove('active');a=null}});
 })();
 </script>
 </body>
